@@ -86,6 +86,14 @@ export default function DashboardPage() {
             >
               <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
             </button>
+            <button
+              type="button"
+              onClick={() => setIsAddOpen(true)}
+              className="flex items-center gap-1.5 px-3.5 py-2 bg-gradient-to-b from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 active:from-indigo-700 active:to-indigo-800 text-white text-xs sm:text-sm font-bold rounded-xl shadow-md shadow-indigo-200/80 btn-spring min-h-[44px]"
+            >
+              <Plus className="w-4 h-4 stroke-[2.5]" />
+              <span>New Board</span>
+            </button>
           </div>
         </div>
       </header>
